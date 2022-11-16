@@ -34,6 +34,7 @@ function makeMap() {
         form.lat.value = latLng.lat();
         form.lng.value = latLng.lng();
         form.addNew.checked = true;
+        map.setCenter(latLng);
     });
     return map;
 }
