@@ -1,0 +1,36 @@
+body {
+  background-color: #222;
+  color: #fff;
+  margin: 0;
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main #map {
+  height: 50vh;
+  min-height: 300px;
+  width: 100%;
+}
+body main #edit-place-form {
+  display: flex;
+  flex-direction: column;
+}
+body main #place-info,
+body main #edit-place-form {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+@media only screen and (max-height: 500px) {
+  body main #map {
+    height: 100vh;
+    width: 50%;
+  }
+  body main #place-info,
+body main #edit-place-form {
+    height: 100vh;
+    width: 25%;
+    overflow: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="my-map/style.css" />
+        <title>map</title>
+    </head>
+    <body>
+        <main>
+            <div id="map"></div>
+            <div id="place-info"></div>
+            <form id="edit-place-form">
+                <label>title: <input name="title" type="text" /></label>
+                <label>description: <input name="content" type="text" /></label>
+                <div>
+                    <label>address: <input name="address" type="text" /></label>
+                    <button id="get-coords-btn">get coords</button>
+                </div>
+                <label>latitude: <input name="lat" type="text" /></label>
+                <label>longitude: <input name="lng" type="text" /></label>
+                <button id="current-location-btn">current location</button>
+                <label
+                    >add new: <input name="addNew" type="checkbox" checked
+                /></label>
+                <button type="submit">add or update</button>
+                <button id="remove-place">remove</button>
+            </form>
+        </main>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxfU-NNBU4lOGe0nZAMMV8ukB-9QweqIw"></script>
+        <script src="my-map/script.js" type="module"></script>
+    </body>
+</html>
