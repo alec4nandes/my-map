@@ -44,14 +44,14 @@ let markers = [];
 
 const pinSize = new google.maps.Size(25, 40),
     regularPin = new google.maps.MarkerImage(
-        "my-map/assets/pin-regular.png",
+        "/my-map/assets/pin-regular.png",
         null /* size is determined at runtime */,
         null /* origin is 0,0 */,
         null /* anchor is bottom center of the scaled image */,
         pinSize
     ),
     highlightedPin = new google.maps.MarkerImage(
-        "my-map/assets/pin-highlighted.png",
+        "/my-map/assets/pin-highlighted.png",
         null /* size is determined at runtime */,
         null /* origin is 0,0 */,
         null /* anchor is bottom center of the scaled image */,
